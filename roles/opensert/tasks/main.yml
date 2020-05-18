@@ -23,7 +23,7 @@
  - name: Send vpn file
    become: yes
    copy: 
-    src: /home/kmvact/clients/files/anastas.ovpn
+    src: /home/kmvact/clients/files/nameclienthost.ovpn
     dest: /etc/openvpn
 #    tags:
 #     - getvpnfile 

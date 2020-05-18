@@ -4,6 +4,6 @@
    tasks:
     - name: Tranfer test file
       copy: 
-        src:  /home/kmvact/testtrans.txt
-        dest: /home/kmvact/testtrans.txt
+        src:  /home/xxxx/testtrans.txt
+        dest: /home/xxxx/testtrans.txt
 ...

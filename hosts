@@ -42,9 +42,8 @@
 
 ## db-[99:101]-node.example.com
 [servers]
-#vmtest2 ansible_host=104.197.88.65 ansible_user=kmvact
-#client ansible_host=10.128.0.6 ansible_user=kmvact
-client ansible_host=35.239.214.3 ansible_user=kmvact
+
+client ansible_host= xxx.xxx.xxx.xxx ansible_user=username
 localhost ansible_host=local ansible_user=kmvact
 [servers:vars]
 ansible_python_interpreter=/usr/bin/python3

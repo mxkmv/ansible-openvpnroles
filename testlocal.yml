@@ -6,7 +6,7 @@
    tasks:
    
    - name: run_local_script 
-     shell: "/home/kmvact/localtest/testone.sh"
+     shell: "/home/xxx/localtest/testone.sh"
      register: "output"
      
    - debug: var=output.stout_lines
