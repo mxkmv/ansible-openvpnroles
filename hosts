@@ -44,7 +44,7 @@
 [servers]
 
 client ansible_host= xxx.xxx.xxx.xxx ansible_user=username
-localhost ansible_host=local ansible_user=kmvact
+localhost ansible_host=local ansible_user=myusername
 [servers:vars]
 ansible_python_interpreter=/usr/bin/python3
 

@@ -1,9 +1,0 @@
----
- - hosts: client
-   become: yes
-   tasks:
-    - name: Tranfer test file
-      copy: 
-        src:  /home/xxxx/testtrans.txt
-        dest: /home/xxxx/testtrans.txt
-...
