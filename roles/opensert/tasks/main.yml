@@ -1,0 +1,30 @@
+---
+
+ - name: Setup Openvpn soft
+   apt: name=openvpn state=latest
+   
+ - name: Start OpenVpn
+   become: yes
+   service:
+     name: openvpn
+     state: started
+     enabled: true
+   notify: start openvpn 
+
+# - name: Build new key for client
+#   become: yes
+#   hosts: localhost
+#   connection: local
+#   shell: some_script.sh 
+#   register: "output"
+
+
+ 
+ - name: Send vpn file
+   become: yes
+   copy: 
+    src: /home/kmvact/clients/files/anastas.ovpn
+    dest: /etc/openvpn
+#    tags:
+#     - getvpnfile 
+   

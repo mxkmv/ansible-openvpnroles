@@ -1,0 +1,16 @@
+---
+# handlers file for opensert
+
+- name: restart openvpn
+  become: yes
+  service:
+    name: openvpn
+    state: restarted
+    enabled: true
+
+- name: start openvpn
+  become: yes
+  service:
+    name: openvpn
+    state: started
+    enabled: true

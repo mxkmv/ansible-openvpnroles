@@ -1,0 +1,9 @@
+---
+ - hosts: client
+   become: yes
+   tasks:
+    - name: Tranfer test file
+      copy: 
+        src:  /home/kmvact/testtrans.txt
+        dest: /home/kmvact/testtrans.txt
+...

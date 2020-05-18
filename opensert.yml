@@ -1,0 +1,7 @@
+---
+ - name: Install some staff and openvpn client
+   hosts: client
+   become: yes
+
+   roles:
+     - opensert
